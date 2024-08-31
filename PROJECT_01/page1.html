@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAIN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- POMODORO SECTION  -->
+    <link rel="stylesheet" href="PomodoroSection.css" />
+  </head>
+  <body>
+    <main class="page1_main">
+      <input type="checkbox" />
+      <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
+      </div>
+      <div class="slideBar">
+        <h2 style="font-size: 30px">Navigation</h2>
+        <ul style="font-size: 20px">
+          <li>
+            <a href="page1.html"><i class="fas fa-fire"></i> Pomodoro</a>
+          </li>
+          <li>
+            <a href="InviteFriends.html"
+              ><i class="fas fa-users"></i> Invite Friends
+            </a>
+          </li>
+          <li>
+            <a href="Leaderboard.html"
+              ><i class="fa-solid fa-ranking-star"></i> Leaderboard
+            </a>
+          </li>
+          <li>
+            <a href="AboutPomodoro.html"
+              ><i class="fa-solid fa-lightbulb"></i> About Pomodoro</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- POMODORO  -->
+      <section>
+        <div class="container">
+          <!-- PANEL ABOVE POMODORO TIMER -->
+          <div class="panel">
+            <p id="work">work</p>
+            <p id="break">break</p>
+          </div>
+          <!-- To create space  -->
+          <div id="space"></div>
+          <!-- POMODORO TIMER -->
+          <div class="timer">
+            <div class="circle">
+              <div class="time">
+                <p id="minutes"></p>
+                <p>:</p>
+                <p id="seconds"></p>
+              </div>
+            </div>
+          </div>
+          <!-- CONTROLLING BUTTON  -->
+          <div class="control">
+            <button id="start" onclick="start()">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="pause" style="display: none" onclick="pauseOrReset()">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
